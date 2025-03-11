@@ -1,0 +1,157 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #10132F;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    background-image: url('background-lights.png');
+    background-size: cover; 
+    background-attachment: fixed
+}/*Configurações do body o corpo da pagina, mudar cor de fundo,
+ tamanho e a imagem fixada durante scroll do mouse*/
+
+header {
+    background-color: #1E255A; 
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2; /*sobrepõem a div*/
+}/*cabeçalho onde tá o titulo, define cor tamanho e posição*/
+
+header h1 {
+    font-family: 'Press Start 2P', cursive; /*fonte de pixel*/
+    margin: 0;
+}/*aqui é do cabeçalho mas só pra editar o titulo no caso a margem e a fonte*/
+
+nav {
+    margin-top: 20px;
+}/*margem de 20 px nas coisas dentro da nav*/
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    background-color: #0D153B;
+    border-radius: 5px;
+    margin: 0 20px;
+} /*Estilizar os links*/
+
+nav a.active, nav a:hover {
+    background-color: #2B3BFF;
+}
+
+main {
+    padding: 20px;
+    z-index: 1;
+}
+
+.game-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+   
+    
+}
+.game-title {
+
+    color:rgb(255, 255, 255); 
+}
+
+.game-item {
+    background-color: #262F78;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.game-item:hover {
+    transform: scale(1.05);
+}
+
+.game-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #1E255A;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+   
+    bottom: 0;
+    width: 100%;
+}
+
+footer img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+.reviews {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.review-item {
+    background-color: #2B3B77;
+    padding: 15px;
+    border-radius: 10px;
+    color: #EFEFEF;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.ver-mais{
+    font-size: 15px;
+    font-style: italic;
+    color: #7f8eff;
+    text-decoration:underline ;
+}
+
+.review-item h2.game-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    color: #FFD700; /* Dourado */
+}
+
+.review-content {
+    font-size: 0.9rem;
+}
+
+.review-author, .review-rating {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.review-rating {
+    color: #FFD700; /* Estilizando as estrelas com cor dourada */
+}
+Strong {
+    color : rgb(89, 237, 89);
+    font-size: 25px;
+}
+.New{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(232, 16, 16);
+    border-radius: 20px;
+  
+}
+.LOGO {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.LOGO img {
+    width: 300px;
+  
+}
+
+/*DESCULPE NÃO CONSEGUIR COMENTAR TUDO DO CSS! Fiquei sem tempo por causa do trabalho kkkk, mas espero que atenda a demanda. (: */
+
+
