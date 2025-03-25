@@ -1,0 +1,124 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(18, 4, 111);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    height: 60px;
+    background-color: rgba(8, 121, 219, 0.357);
+    border-radius: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 6px solid #0879db;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.nav a {
+    color: rgb(64, 107, 223);
+    text-decoration: none;
+    transition: 0.50s;
+}
+
+.nav a:hover {
+    color: rgb(0, 234, 255);
+    background-color: #000000;
+}
+
+main {
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    max-width: 50%;
+}
+
+.content h1 {
+    font-size: 40px;
+}
+
+.content h1 span {
+    color: rgb(255, 221, 0);
+}
+
+.content p {
+    color: rgb(31, 152, 250);
+}
+
+.form-group {
+    margin: 20px;
+}
+
+.form-group input {
+    padding: 8px;
+    background-color: #5ba5ee;
+    color: #0a508e;
+    border-radius: 10px;
+    border: 2px solid rgb(238, 255, 0);
+}
+
+.form-group button {
+    padding: 8px;
+    background-color: #fde400;
+    color: #0a508e;
+    border-radius: 10px;
+    border: 2px solid rgb(238, 255, 0);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: blueviolet;
+}
+
+.Image-container {
+    max-width: 40%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Image-container img {
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.ellipse {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(to right, rgb(79, 79, 233), blue, purple);
+    position: absolute;
+    z-index: 1;
+    top: 50px;  /* Move a ellipse um pouco para baixo */
+    left: -50px; /* Move a ellipse para a esquerda */
+    transform: rotate(20deg); /* Inclina levemente a ellipse */
+}
